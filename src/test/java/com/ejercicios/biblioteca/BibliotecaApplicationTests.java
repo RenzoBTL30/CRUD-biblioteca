@@ -51,7 +51,6 @@ class BibliotecaApplicationTests {
                 .andExpect(jsonPath("$.idlibro").exists());
     }
     
-    
     @Test
     public void testListarLibros() throws Exception {
     	
@@ -62,8 +61,6 @@ class BibliotecaApplicationTests {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$").exists());
     }
-    
-   
     
     @Test
     public void testLeerLibro() throws Exception {
